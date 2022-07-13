@@ -253,7 +253,6 @@ h3 {
 
 @media (min-width: 1200px) {
   .shop {
-    /* max-width: 120rem; */
     max-width: 150rem;
   }
 
