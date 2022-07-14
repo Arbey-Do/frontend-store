@@ -28,11 +28,48 @@
       </a>
     </header>
     <nav class="nav">
-      <a class="nav__link nav__link--active" href="./index.html">Tienda</a>
-      <a class="nav__link nav__link" href="./about.html">Nosotros</a>
+      <a class="nav__link" href="./index.html">Tienda</a>
+      <a class="nav__link" href="./about.html">Nosotros</a>
     </nav>
     <main class="container">
       <h1>Producto</h1>
+      <div class="t-shirt">
+        <img
+          class="t-shirt__image"
+          src="https://i.imgur.com/U3LndqV.jpg"
+          alt="t-shirt"
+        />
+        <div class="t-shirt__content">
+          <p class="t-shirt__info normal-text text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            consequatur tempore voluptas consequuntur eligendi atque odit
+            accusamus, alias modi assumenda facilis soluta vitae. Amet
+            architecto consectetur eos modi magni deleniti! Lorem ipsum dolor
+            sit amet consectetur adipisicing elit.
+          </p>
+          <form class="t-shirt__form">
+            <select class="t-shirt__form-field">
+              <option value="" disabled selected>
+                -- Seleccionar Talla --
+              </option>
+              <option value="">Chica</option>
+              <option value="">Mediana</option>
+              <option value="">Grande</option>
+            </select>
+            <input
+              class="t-shirt__form-field"
+              type="number"
+              placeholder="Cantidad"
+              min="1"
+            />
+            <input
+              class="t-shirt__submit"
+              type="submit"
+              value="Agregar al carrito"
+            />
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <p class="footer__text">
