@@ -87,8 +87,13 @@ input[type="number"]::placeholder {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+}
+
+@media (min-width: 412px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .normal-text {
@@ -129,20 +134,25 @@ input[type="number"]::placeholder {
   background-color: #891190;
   padding: 1rem 0;
   display: flex;
-  justify-content: center;
-  /* gap: 2rem; Using flexbox*/
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav__link {
   font-family: var(--main-font);
   color: var(--white);
   font-size: 3rem;
-  margin-right: 2rem;
 }
 
-.nav__link:last-of-type {
-  margin-right: 0;
+@media (min-width: 360px) {
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
 }
+
+/* .nav__link:last-of-type {} */
 
 .nav__link--active,
 .nav__link:hover {
@@ -161,6 +171,8 @@ input[type="number"]::placeholder {
   text-align: center;
   font-family: var(--main-font);
   font-size: 2.2rem;
+  padding: 0 1rem;
+  color: rgb(255 255 255 / 70%);
 }
 
 /* product styles */
@@ -195,19 +207,26 @@ input[type="number"]::placeholder {
 }
 
 .product__name-tag {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .product__price-tag {
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: var(--secondary);
 }
 
 .graphic {
+  display: none;
   min-height: 30rem;
   background-repeat: no-repeat;
   background-size: cover;
   grid-column: 1 / 3;
+}
+
+@media (min-width: 412px) {
+  .graphic {
+    display: block;
+  }
 }
 
 .graphic--tshirts {
